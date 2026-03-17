@@ -11,6 +11,10 @@ A multi-language benchmarking framework designed to evaluate and compare the par
 The architecture separates the analytical frontend from the computational backends. A Python/Streamlit dashboard acts as the orchestrator, dispatching command-line arguments (algorithm type, thread count, input size, iterations) to native C and Rust executables.  
 Results are asynchronously logged into an append-only `results.jsonl` (JSON Lines) file, ensuring robust data persistence and preventing corruption during highly intensive multi-threaded workloads.  
 
+<img width="1920" height="1080" alt="Arhitectura" src="https://github.com/user-attachments/assets/6f68d1e2-65e5-4352-983f-45df8bd526f9" />  
+
+
+
 # Objectives  
 The primary objective was to build a reliable profiling suite capable of exposing hardware limitations by:  
 * **Hardware Profiling:** Stress-testing specific CPU subsystems, including the ALU, FPU, and Cache/RAM hierarchy, using mathematically tailored algorithms.
